@@ -5,19 +5,27 @@
 	list-style:none;
 }
 
+body{
+	background-color:#FFFFE0;
+}
+
+/*---- для файл: regist.html -------*/
+#menuZn2{
+	position:fixed;
+	left:20px;
+	top:15px;
+}
+
+/*-----------------------------------*/
 
 
 
-
-
-/*----------------------------------------- 1 ЧАСТЬ ----------------------------------------------------------*/
+/*----------------------------------------- 1 ЧАСТЬ / Шапка ----------------------------------------------------------*/
 
 .Kontainer_1{
 	display:flex;
-		border:1px solid;
 	width:99.7%;
 	height:750px;
-
 }
 
 .hedar{
@@ -25,32 +33,61 @@
 	left:0px;
 	top:0px;
 	
-	border:1px solid;
 	width:100%;
-	height:95px;
-		z-index:5;
-		
-		background-color:gray;
-
+	height:75px;
+	z-index:11;
+	background-color:#2F4F4F;
 }
 #menuZn{
 	position:fixed;
-	left:10px;
+	left:20px;
+	top:15px;
+}
+
+/*----- боковое меню --------------*/
+.navig{
+	position:fixed;
+	left:-300px;
+	top:0px;
+	width:250px;
+	height:450px;
+	border:1px solid white;
+	z-index:20;
+	background-color:#BDB76B;
+}
+#clos2{
+	position:absolute;
+	left:215px;
 	top:10px;
 }
-.hedar ul{
-	display:flex;
-position:fixed;
-	left:0px;
-	top:70px;
+.navig ul{
+	position:absolute;
+	left:25px;
+	top:50px;
 }
-.hedar ul li a{
-		margin-left:60px;
-		color:white;
-		font-size:18px;
+.navig ul li{
+	margin-top:35px;
+	font-size:21px;
+}
+.navig ul li a{
+	color:black;
+}
+/*----------------------------------*/
+
+
+.MainKnop{  /*---- кнопка Консультация -------*/
+	position:absolute;
+	right:30px;
+	top:15px;
+	
+	z-index:14;
+	width:120px;
+	height:40px;
+	border-radius:20px;
+	border:none;
+	background-color:#BDB76B;
 
 }
-
 
 
 
@@ -67,8 +104,8 @@ position:fixed;
 
 #foto2{  /* Петрович */
 	position:absolute;
-	left:40px;
-	top:30px;
+	left:50px;
+	top:110px;
 border-radius:50%;
 border:2px solid white;
 	z-index:2;
@@ -76,48 +113,43 @@ border:2px solid white;
 
 
 
-.text_1{ /*gucci*/
-	
-}
 
+.content_1_2{  /*burr и парт*/
+	font-size:40px;
+	font-weight:bold;
+	text-shadow: 1px 1px 5px white;
 
-.content_1_2{  /*header*/
-font-size:50px;
-font-weight:bold;
-				text-shadow: 1px 1px 5px white;
-
-		position:absolute;
-	left:70px;
-	top:430px;
+	position:absolute;
+	left:585px;
+	top:10px;
 	z-index:2;
 }
 
-.content_1_3{  /*header*/
-font-size:23px;
+.content_1_3{  /* Здравствуйте ... */
+	font-size:23px;
 	border:2px solid white;
-border-radius:20px;
-width:500px;
-	height:130px;
+	border-radius:20px;
+	width:490px;
+	height:120px;
 
-		position:absolute;
-	left:40px;
-	top:490px;
+	position:absolute;
+	left:45px;
+	top:540px;
 	z-index:2;
-	padding:15px;
+	padding:20px;
 	
-	background-color:#F4A460;
+	background-color:#BDB76B;
 }
 .content_1_4{
 	font-size:26px;
 	border-left:5px solid;
 	height:350px;
 
-		position:absolute;
-	left:740px;
-	top:90px;
+	position:absolute;
+	left:840px;
+	top:140px;
 	z-index:2;	
-padding:10px;	
-
+	padding:10px;	
 }
 
 .content_1_4 ul li{
@@ -125,19 +157,39 @@ padding:10px;
 }
 
 .content_1_4 ul li a{
-color:black;
-			text-shadow: 1px 1px 5px white;
+	color:black;
+	text-shadow: 1px 1px 5px white;
+}
+
+
+.knop1{/*---- кнопка связаться со мной -------*/
+
+	position:absolute;
+	right:40px;
+	top:550px;
+	
+	z-index:10;
+	width:170px;
+	height:60px;
+	border-radius:25px;
+	border:none;
+		background-color:#BDB76B;
+	border:2px solid white;
 
 }
 
+	
+
+
+
+
 .content_1_5 ul{
 	display:flex;
-		position:absolute;
-	left:1100px;
-	top:590px;
+	position:absolute;
+	left:1140px;
+	top:650px;
 	z-index:3;	
 	font-size:20px;
-
 }
 .content_1_5 ul li{
 	margin-left:10px;
@@ -150,69 +202,292 @@ color:black;
 
 
 
-/*----------------------------------------- 2 ЧАСТЬ ----------------------------------------------------------*/
+#usor{
+	position:absolute;
+	left:680px;
+	top:825px;
+	
+	z-index:9;
+}
+
+
+
+
+
+/*----------------------------------------- Немного о нас ----------------------------------------------------------*/
 
 
 .Kontainer_2{
 	display:flex;
-	border:1px solid;
 	width:99.5%;
 	height:650px;
 	position:absolute;
 	left:0px;
-	top:755px;
+	top:850px;
 }
-.content_2_2{
-	border:3px solid red;
-	height:350px;
 
+.text_2 p{ /* Немного о себе*/
 	position:absolute;
-	left:10px;
-	top:550px;
-	z-index:2;	
-}
-.content_2_2 ul li{
-	margin-bottom:12px;
-}
-.content_2_2 ul li a{
-	color:black;
-	text-shadow: 1px 1px 5px white;
+	left:510px;
+	top:35px;
+	
+	font-size:30px;
+	font-weight:bold;
+	border:2px solid;
+	width:525px;
+	height:40px;
+	border-radius:25px;
+	padding:10px;
+		background-color:#BDB76B;
+
 }
 
-.content_2_3{ /* Немного о себе*/
-		border:3px solid blue;
-position:relative;
-	left:10px;
-	top:5px;
-		font-size:30px;
+.text_2_1 { /* Мы создали ...*/
+	position:absolute;
+	left:80px;
+	top:200px;
+	padding:7px;
+		border-left:5px solid #BDB76B;
 
 	
-	width:900px;
-	height:550px;
+	font-size:20px;	
 }
-.content_2_3 p {
+
+
+/*.text_2 p {              // проверить!!
 	font-size:20px;
 	display:flex;
 	justify-content:center;
 }
+*/
+
+
 
 .content_2_4{ /* Моя фотка*/
 
 }
 #Burr1{
 	position:relative;
-	left:930px;
-	top:-550px;
-}
-.knop1{
-	position:relative;
 	left:700px;
-	top:0px;
-	
-		width:200px;
-	height:80px;
+	top:150px;
+		border-radius:10px;
+
 }
 
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------- 3 ЧАСТЬ  ----------------------------------------------------------*/
+
+.Kontainer_3{
+	display:flex;
+	width:99.5%;
+	height:650px;
+	position:absolute;
+	left:0px;
+	top:2400px;
+}
+#usor2{
+	position:absolute;
+	left:680px;
+	top:1780px;
+	
+	z-index:9;
+}
+
+.text_3{   /*Мы за справидливость ... */
+	position:absolute;
+	left:410px;
+	top:-555px;
+	
+	font-size:30px;
+	font-weight:bold;
+	
+	border:2px solid;
+	width:715px;
+	height:40px;
+	border-radius:25px;
+	padding:10px;
+	background-color:#BDB76B;
+
+}
+
+
+.slide_block{
+	display:flex;
+	width:1500px;
+	height:750px;
+	overflow:hidden;
+	
+	position:absolute;
+	left:7px;
+	top:-450px;
+	z-index:2;	
+}
+
+input[name='law']{
+	overflow:visibility;
+	
+	position:relative;
+	left:30px;
+	top:50px;
+	z-index:14;	
+	height:13px;
+}
+
+
+#z_1:checked ~ .slide_foto1 {
+	margin-left:-20%;
+}
+#z_2:checked ~ .slide_foto2 {
+	margin-left:-121%;
+}
+#z_3:checked ~ .slide_foto3 {
+	margin-left:-230%;
+}
+#z_4:checked ~ .slide_foto4 {
+	margin-left:-330%;
+}
+
+.slide_foto2 p {
+	font-size:50px;
+	position:relative;
+	left:500px;
+	top:-400px;
+	z-index:14;	
+	color:red;
+
+}
+.slide_foto3 p {
+	font-size:50px;
+	position:relative;
+	left:500px;
+	top:-400px;
+	z-index:14;	
+	color:red;
+
+}
+.slide_foto4 p {
+	font-size:50px;
+	position:relative;
+	left:500px;
+	top:-400px;
+	z-index:14;	
+	color:red;
+
+}
+
+
+
+#strela{
+	position:absolute;
+	left:900px;
+	top:400px;
+	z-index:20;	
+	border:2px solid white;
+	border-radius:50%;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------- 4 ЧАСТЬ / наши эксперты ----------------------------------------------------------*/
+.Main{
+	height:2000px;
+}
+
+.Kontainer_4{
+	display:flex;
+	width:99.5%;
+	height:750px;
+	position:absolute;
+	left:0px;
+	top:2970px;
+}
+
+
+#usor3{
+	position:absolute;
+	left:680px;
+	top:2850px;
+	
+	z-index:9;
+}
+
+.text_4{
+	position:absolute;
+	left:655px;
+	top:-50px;
+	
+	font-size:30px;
+	font-weight:bold;
+	
+	border:2px solid;
+	width:220px;
+	height:35px;
+	border-radius:25px;
+	padding:10px;
+	
+		background-color:#BDB76B;
+
+}
+
+
+.block_4{
+	display:flex;
+	position:absolute;
+	left:45px;
+	top:80px;
+		border-top:5px solid #BDB76B;
+width:1440px;
+}
+.content_4_1, .content_4_2, .content_4_3, .content_4_4 {
+	border:none;
+	width:300px;
+	height:400px;
+	margin-left:50px;
+	border-radius:10px;
+}
+
+
+
+.block_4_4{
+	display:flex;
+	position:absolute;
+	left:25px;
+	top:490px;
+	width:1405px;
+}
+.textOp1, .textOp2, .textOp3, .textOp4 {
+	border:2px solid;
+	width:270px;
+	height:130px;
+	margin-left:70px;
+	border-radius:10px;
+	padding:5px;
+	word-wrap:break-word;
+	font-size:18px;
+	background-color:#BDB76B;
+}
+.textOp1 p, .textOp2 p, .textOp3 p, .textOp4 p {
+font-weight:bold;
+	font-size:19px;
+
+}
 
 
 
@@ -224,60 +499,62 @@ position:relative;
 /*----------------------------------------------------------------------------------------------------------*/
 
 
-/*----------------------------------------- 3 ЧАСТЬ ----------------------------------------------------------*/
+
+/*----------------------------------------- 5 ЧАСТЬ ----------------------------------------------------------*/
 
 
-.Kontainer_3{
+.Kontainer_5{
 	display:flex;
-	border:1px solid green;
-	width:99.5%;
-	height:650px;
+	width:99.9%;
+	height:350px;
 	position:absolute;
 	left:0px;
-	top:1455px;
+	bottom:-3350px;
+	background-color:#BDB76B;
 }
 
 
 
 
-/*----------------------------------------- 4 ЧАСТЬ ----------------------------------------------------------*/
-.Main{
-	height:2350px;
-
-}
-
-.Kontainer_4{
+.content_5_2 ul{
 	display:flex;
-		border:3px solid red;
-	width:99.5%;
-	height:250px;
 	position:absolute;
-	left:0px;
-	bottom:-2650px;
+	left:1100px;
+	top:300px;
+	z-index:3;	
+	font-size:18px;
+}
+.content_5_2 ul li{
+	margin-left:10px;
 }
 
+.content_5_3{  /*header*/
+	font-size:27px;
+	font-weight:bold;
+	text-shadow: 1px 1px 5px white;
 
+	position:absolute;
+	left:1200px;
+	top:25px;
+	z-index:3;
+}
 
+.content_7{
+	position:absolute;
+	left:520px;
+	top:30px;
+	font-size:19px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.content_6 ul {
+	display:flex;
+	position:absolute;
+	left:500px;
+	top:300px;
+}
+.content_6 ul li {
+margin-left:20px;
+}
 
 
 
